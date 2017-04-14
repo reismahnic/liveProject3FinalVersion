@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Live Project 3</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+	<link href="css/style.css" rel="stylesheet">
+	
+
+	<% include ../views/header.html %>
+</head>
+
+<body background = "./images/backdrop.jpg">
+    <header>
+
+
+    </header>
+
+    <main>
+
+        <!--Main layout-->
+        <div class="container">
+            <!--First row-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h1 class="h1-responsive">Live Project 3</h1>
+                        <br>
+                        <h2>Under Construction</h2>
+                        <hr>
+                        <h2>Sign the Guestbook for our Email Newsletter:</h2>
+                        <hr>
+						<!--<a target="_blank"  href="http://google.com/" class="btn btn-mdb btn-stc" rel="nofollow">Sign-Up <i class="fa fa-book right"></i></a>-->
+						<!--MODAL FOR USERNAME, ID-->
+						<button id="myBtn"class="fa fa-book right">&nbsp Sign-Up</button>
+						
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+						
+							<!-- Modal content -->
+							<div class="modal-content">
+								<div class="modal-header">
+								<span class="close">&times;</span>
+								<h2>Sign Up</h2>
+							</div>
+							<div class="modal-body">
+							<form action="/Subscriber" method = "post">
+								<!-- SIGNUP FORM------------------->
+								<div class="container">
+								    <label><b><!--Name--></b></label>
+									<input type="text" placeholder="Enter Name" name="Name" required>
+									<label><b><!--Email--></b></label>
+									<input type="text" placeholder="Enter Email" name="Email" required>
+									<a href="http://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1">&nbsp Terms & Privacy</a>
+
+									<div class="clearfix">
+									<button id="cancelbtn">Cancel</button>
+									<button type="submit" class="signupbtn">Sign Up</button>
+									</div>
+								</div>
+							</form>
+							</div>
+							<div class="modal-footer">
+								<h3><!--Sign Up--></h3>
+							</div>
+							</div>
+							
+							
+						</div>
+						
+						
+                        
+                    </div>
+                </div>
+            </div>
+            <!--/.First row-->
+
+            <hr class="extra-margins">
+
+            <!--Second row-->
+            <div class="row">
+                <!--First columnn-->
+                <div class="col-lg-4">
+                    <!--Card-->
+                    <div class="card wow fadeIn" data-wow-delay="0.4s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src= "./images/pic001.jpg">
+                            <a href="#">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title">Column 1</h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-info">Read more</a>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--First columnn-->
+
+                <!--Second columnn-->
+                <div class="col-lg-4">
+                    <!--Card-->
+                    <div class="card wow fadeIn" data-wow-delay="0.6s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src= "./images/pic002.jpeg">
+                            <a href="#">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title">Column 2</h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-info">Read more</a>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Second columnn-->
+
+                <!--Third columnn-->
+                <div class="col-lg-4">
+                    <!--Card-->
+                    <div class="card wow fadeIn" data-wow-delay="0.8s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src= "./images/pic003.jpg">
+                            <a href="#">
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <h4 class="card-title">Column 3</h4>
+                            <!--Text-->
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-info">Read more</a>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Third columnn-->
+            </div>
+            <!--/.Second row-->
+        </div>
+        <!--/.Main layout-->
+
+    </main>
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-lg-3 offset-lg-1 hidden-lg-down">
+                    <h5 class="title">LIVE PROJECT 3 Etc.</h5>
+                    <h6></h6>
+
+                    <h6></h6>
+                </div>
+                <!--/.First column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Second column-->
+                <div class="col-lg-2 col-md-4 offset-lg-1">
+                    <h5 class="title">First column</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Third column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title">Second column</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Fourth column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title">Third column</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <hr>
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                <!--Copyright © 2017 Auto Thematic.com-->
+			<script language="JavaScript">
+				document.write('Copyright &copy; &nbsp' );
+				
+				document.write(new Date().getFullYear());
+				
+				document.write(' &nbspAuto Thematic.com');
+			</script>
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+	
+	  <!-- Reis' New JS File -->
+    <script type="text/javascript" src="js/additionaljs.js"></script>
+
+	  <!-- David added passport.js -->
+	<script type="text/javascript" src="js/passport.js"></script>
+	
+    <script>
+    new WOW().init();
+    </script>
+
+</body>
+
+</html>
