@@ -1,0 +1,5 @@
+Server type: Database Engine
+Server name: mssql5.gear.host
+Authentication: SQL Server Authentication
+Login: liveproject3db
+Password: Tf7j!!K80BwY

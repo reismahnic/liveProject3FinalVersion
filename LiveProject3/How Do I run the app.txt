@@ -1,0 +1,5 @@
+1. open command prompt
+2. navigate to folder
+3. 'node app'
+4. Open browser, localhost:8080 (or whatever port the command prompt is listening at)
+5. To stop: ctrl+c
