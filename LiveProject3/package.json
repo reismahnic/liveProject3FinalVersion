@@ -1,6 +1,10 @@
 {
   "name": "Our-Theme",
   "description": "Website Theme",
+  "engines":
+  {
+    "node": "6.10.0" 
+  },
   "version": "0.0.1",
   "main": "app.js",
   "scripts":
