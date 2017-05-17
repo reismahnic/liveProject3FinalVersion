@@ -70,7 +70,48 @@ module.exports = function(app, passport,server) {
 	
 		response.redirect('/');
     });
+
+	//NEW STUFF FOR POSTING
+	app.get('/Show', function(request, response)
+	{
+		var conn = new sql.Connection(dbconfig);
+		var req = new sql.Request(conn);
+		
+		var userName = request.body.Name;	
+		console.log(userName);
+		var userEmail = request.body.Email;
+		console.log(userEmail);
+		
+		
 	
+		
+		conn.connect(function(err)
+		{
+			if(err)
+			{
+				console.log(err);
+				return;
+			}
+			else
+			{
+				console.log('worked');
+			}
+			req.query("SELECT  * FROM userDatabase", function (err, recordset)
+			{
+				if (err)
+				{
+					console.log(err);
+				}
+				else
+				{
+					console.log(recordset);
+				}
+				conn.close();
+			});
+		});
+	
+		response.redirect('/');
+    });
 	
 	
 	
